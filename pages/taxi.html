@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi &amp; Cab Booking — Maahi Trips</title>
+<meta name="description" content="Sedans, SUVs and outstation cabs — booked and confirmed through Maahi Trips, Kopaganj, Mau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Hind:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body id="top">
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html" aria-label="Maahi Trips — Home">
+      <div class="logo-mark"><img src="assets/maahi-logo.png" alt="Maahi Trips logo"></div>
+      <div class="logo-text">
+        <span class="logo-word">MAAHI TRIPS</span>
+        <span class="logo-tagline">Safar Aapka, Saath Hamaara</span>
+      </div>
+    </a>
+    <nav class="navlinks">
+      <a href="#" id="offersNavLink">Offers</a>
+      <a href="index.html#umrah">Umrah</a>
+      <a href="index.html#services">Services</a>
+      <a href="#packages">Tour Packages</a>
+      <a href="#why">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:9044100521">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="full">90441&nbsp;00521</span>
+    </a>
+    <button class="menu-toggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<div class="offer-modal-overlay" id="offerModalOverlay">
+  <div class="offer-modal">
+    <button class="offer-modal-close" id="offerModalClose" aria-label="Close">&times;</button>
+    <div class="section-head" style="margin-bottom:20px;">
+      <div>
+        <div class="num">OFFERS</div>
+        <h2 style="font-size:22px;">Deals worth booking today.</h2>
+      </div>
+      <p>Current discounts and limited-time deals across flights, tours and Umrah packages.</p>
+    </div>
+
+    <div class="offer-grid">
+      <div class="offer-box">
+        <div class="offer-tag">Umrah · Mega Offer</div>
+        <div class="offer-title">🎉 Maahi Trips का मेगा उमराह ऑफर! 🕋</div>
+        <div class="offer-desc">
+          🌙 उमराह पैकेज सिर्फ <b>₹74,500/-</b> से शुरू<br><br>
+          ✨ पहले बुकिंग कराने वाले 20 मेहमानों में से किसी 1 Lucky Winner को मिलेगा बिल्कुल FREE Smartphone! 📱🎁<br><br>
+          ✅ उमराह वीज़ा<br>
+          ✅ रिटर्न फ्लाइट<br>
+          ✅ होटल बुकिंग<br>
+          ✅ पूरी ट्रैवल सहायता<br>
+          ✅ ज़ियारत<br><br>
+          📢 ऑफर सीमित समय के लिए है।<br>
+          आज ही अपनी सीट बुक करें और FREE Smartphone जीतने का मौका पाएं*
+        </div>
+        <a class="offer-book-btn" href="tel:9044100521">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="taxis">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="num">03 / TAXI &amp; CAB PARTNERS</div>
+        <h2>Rides for every<br>trip and terrain.</h2>
+      </div>
+      <p>Sedans, SUVs and outstation cabs — drivers verified, fare confirmed before you travel.</p>
+    </div>
+
+    <div class="taxi-grid">
+
+      <div class="taxi-card">
+        <div class="taxi-img-wrap">
+          <div class="taxi-slider" onclick="openLightbox(this)">
+            <img class="taxi-slide active" src="images/taxis/taxi1.jpg" alt="Taxi name">
+          </div>
+          <div class="taxi-price-tag">Per Day<b>₹1,999</b></div>
+        </div>
+        <div class="taxi-body">
+          <div class="taxi-title">Taxi Name 1</div>
+          <div class="taxi-stars">Hatchback · 4 Seater</div>
+          <div class="taxi-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>City, State</div>
+          <ul class="taxi-amenities">
+            <li>AC</li>
+            <li>Music System</li>
+            <li>Local &amp; Outstation</li>
+          </ul>
+          <div class="taxi-book-label">Book Now</div>
+          <div class="taxi-book-row"><a class="taxi-book-btn" href="tel:9XXXXXXXXX">Call</a><a class="taxi-book-btn taxi-whatsapp-btn" href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+      </div>
+
+      <div class="taxi-card">
+        <div class="taxi-img-wrap">
+          <div class="taxi-slider" onclick="openLightbox(this)">
+            <img class="taxi-slide active" src="images/taxis/taxi2.jpg" alt="Taxi name">
+          </div>
+          <div class="taxi-price-tag">Per Day<b>₹2,499</b></div>
+        </div>
+        <div class="taxi-body">
+          <div class="taxi-title">Taxi Name 2</div>
+          <div class="taxi-stars">Sedan · 4 Seater</div>
+          <div class="taxi-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>City, State</div>
+          <ul class="taxi-amenities">
+            <li>AC</li>
+            <li>GPS Tracking</li>
+            <li>Extra Luggage Space</li>
+            <li>Outstation OK</li>
+          </ul>
+          <div class="taxi-book-label">Book Now</div>
+          <div class="taxi-book-row"><a class="taxi-book-btn" href="tel:9XXXXXXXXX">Call</a><a class="taxi-book-btn taxi-whatsapp-btn" href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+      </div>
+
+      <div class="taxi-card">
+        <div class="taxi-img-wrap">
+          <div class="taxi-slider" onclick="openLightbox(this)">
+            <img class="taxi-slide active" src="images/taxis/taxi3.jpg" alt="Taxi name">
+          </div>
+          <div class="taxi-price-tag">Per Day<b>₹3,499</b></div>
+        </div>
+        <div class="taxi-body">
+          <div class="taxi-title">Taxi Name 3</div>
+          <div class="taxi-stars">SUV · 6-7 Seater</div>
+          <div class="taxi-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>City, State</div>
+          <ul class="taxi-amenities">
+            <li>AC</li>
+            <li>Music System</li>
+            <li>Hill / Ghat Roads OK</li>
+          </ul>
+          <div class="taxi-book-label">Book Now</div>
+          <div class="taxi-book-row"><a class="taxi-book-btn" href="tel:9XXXXXXXXX">Call</a><a class="taxi-book-btn taxi-whatsapp-btn" href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+      </div>
+
+      <div class="taxi-card">
+        <div class="taxi-img-wrap">
+          <div class="taxi-slider" onclick="openLightbox(this)">
+            <img class="taxi-slide active" src="images/taxis/taxi4.jpg" alt="Taxi name">
+          </div>
+          <div class="taxi-price-tag">Per Day<b>₹4,999</b></div>
+        </div>
+        <div class="taxi-body">
+          <div class="taxi-title">Taxi Name 4</div>
+          <div class="taxi-stars">Tempo Traveller · 12 Seater</div>
+          <div class="taxi-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>City, State</div>
+          <ul class="taxi-amenities">
+            <li>AC</li>
+            <li>Group / Family Trips</li>
+            <li>Outstation OK</li>
+          </ul>
+          <div class="taxi-book-label">Book Now</div>
+          <div class="taxi-book-row"><a class="taxi-book-btn" href="tel:9XXXXXXXXX">Call</a><a class="taxi-book-btn taxi-whatsapp-btn" href="https://wa.me/919XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ADMIN NOTE (not visible on site): Yaha aur taxi add karne ke liye ek taxi-card block copy-paste karein aur naam, price, type, seater, location, amenities aur photo (images/taxis/ folder me) badal dein. Zaroori: Call/WhatsApp button me jo 9XXXXXXXXX likha hai, usse hata kar us taxi owner ka apna mobile number daalein — taaki customer seedha usi driver ko contact kare. Ye listing owners ke liye bilkul free hai — koi charge nahi liya jaata. -->
+
+    <!-- List Your Taxi — taxi/cab owner self-submission, sent via EmailJS -->
+    <div class="list-taxi-wrap">
+      <div class="list-taxi-intro">
+        <div class="eyebrow">Taxi / Cab Owners</div>
+        <h3>List your vehicle with Maahi Trips.</h3>
+        <p>Apni taxi/cab hamare saath list karein — humari team details check karke usse site par add kar degi.</p>
+        <ul class="list-taxi-points">
+          <li>No listing fee to submit</li>
+          <li>Direct calls &amp; WhatsApp bookings from travellers</li>
+          <li>Team verifies details before it goes live</li>
+        </ul>
+      </div>
+      <div class="list-taxi-form-side">
+        <h4>Submit Your Taxi Details</h4>
+        <!-- Taxi listing form: submits via the same EmailJS setup as the enquiry form below -->
+        <form id="list-taxi-form" novalidate>
+          <div class="form-row">
+            <div class="form-group" id="lt-fg-owner">
+              <label for="lt-owner">Owner / Driver Name</label>
+              <input type="text" id="lt-owner" placeholder="Your name">
+              <span class="field-error-msg">Please enter your name.</span>
+            </div>
+            <div class="form-group" id="lt-fg-phone">
+              <label for="lt-phone">Mobile Number</label>
+              <input type="tel" id="lt-phone" placeholder="10-digit number">
+              <span class="field-error-msg">Please enter a valid 10-digit mobile number.</span>
+            </div>
+          </div>
+          <div class="form-group" id="lt-fg-email">
+            <label for="lt-email">Email Address</label>
+            <input type="email" id="lt-email" placeholder="you@example.com">
+            <span class="field-error-msg">Please enter a valid email address.</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group" id="lt-fg-vehiclename">
+              <label for="lt-vehiclename">Vehicle Name / Model</label>
+              <input type="text" id="lt-vehiclename" placeholder="e.g. Swift Dzire">
+              <span class="field-error-msg">Please enter the vehicle name.</span>
+            </div>
+            <div class="form-group" id="lt-fg-city">
+              <label for="lt-city">City / Base Location</label>
+              <input type="text" id="lt-city" placeholder="City, State">
+              <span class="field-error-msg">Please enter the city.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group" id="lt-fg-type">
+              <label for="lt-type">Vehicle Type</label>
+              <select id="lt-type">
+                <option value="">Select type</option>
+                <option>Hatchback</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Tempo Traveller</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group" id="lt-fg-seats">
+              <label for="lt-seats">Seating Capacity</label>
+              <input type="number" id="lt-seats" min="1" placeholder="e.g. 4">
+            </div>
+          </div>
+          <div class="form-group" id="lt-fg-price">
+            <label for="lt-price">Price / Day (₹)</label>
+            <input type="number" id="lt-price" min="0" placeholder="e.g. 2000">
+          </div>
+          <div class="form-group">
+            <label for="lt-amenities">Amenities</label>
+            <input type="text" id="lt-amenities" placeholder="e.g. AC, Music System, GPS, Outstation OK">
+          </div>
+          <div class="form-group" id="lt-fg-desc">
+            <label for="lt-desc">Description</label>
+            <textarea id="lt-desc" rows="3" placeholder="Short description of the vehicle/service"></textarea>
+            <span class="field-error-msg">Please enter a short description.</span>
+          </div>
+          <div class="form-group" id="lt-fg-photos">
+            <label for="lt-photos">Vehicle Photos</label>
+            <input type="file" id="lt-photos" accept="image/*" multiple>
+            <span class="form-hint" style="margin-top:2px;">JPG/PNG, har photo max 5MB. Aap Submit ke baad status yahin dekh sakte hain.</span>
+            <span class="field-error-msg">Please choose at least 1 photo.</span>
+          </div>
+          <button type="submit" class="form-submit" id="lt-submit-btn">
+            <span id="lt-submit-label">Submit Listing</span>
+          </button>
+          <div class="form-status" id="lt-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="logo-mini"><img src="maahi-logo.png" alt="Maahi Trips">MAAHI TRIPS</div>
+    <div>CHAMAN ROAD · KOPAGANJ · MAU, UP</div>
+    <div>90441 00521</div>
+    <div class="footer-tagline">"Aapka Bharosa, Hamari Zimmedari"</div>
+  </div>
+</footer>
+
+<a href="tel:9044100521" class="call-float" aria-label="Call Maahi Trips">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919044100521?text=Hi%20Maahi%20Trips%2C%20I%20want%20to%20enquire%20about%20a%20booking"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+    <path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.01A8.94 8.94 0 0 0 20 12.5a8.87 8.87 0 0 0-2.4-6.18zm-5.55 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.97.94-2.72-.18-.28a7.42 7.42 0 0 1 11.6-9.16 7.36 7.36 0 0 1 2.18 5.24 7.43 7.43 0 0 1-7.69 7.14zm4.07-5.56c-.22-.11-1.31-.65-1.52-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.17-.48.06-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.32-1.24-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.66-.18-.43-.37-.37-.5-.38-.13-.01-.28-.01-.43-.01s-.39.06-.6.28c-.2.22-.79.77-.79 1.87s.81 2.17.92 2.32c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.05-.1-.2-.16-.42-.27z"/>
+  </svg>
+</a>
+
+<!-- Live Visitor / Social Proof Popup -->
+<div class="social-proof" id="socialProof" role="status" aria-live="polite">
+  <button class="social-proof-close" id="socialProofClose" aria-label="Dismiss">&times;</button>
+  <div class="social-proof-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+    <span class="pulse-dot"></span>
+  </div>
+  <div>
+    <div class="social-proof-text"><strong id="socialProofCount">15</strong> people viewed <strong id="socialProofPackage">this package</strong> today</div>
+    <div class="social-proof-meta">Live activity · Maahi Trips</div>
+  </div>
+</div>
+
+<!-- Gallery Lightbox (used here for the "view full photo" zoom button) -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+  <img id="lightbox-img" src="" alt="Maahi Trips gallery photo">
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="src/script.js"></script>
+</body>
+</html>
