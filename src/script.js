@@ -556,4 +556,3 @@
   window.addEventListener('load', function(){
     setTimeout(openOfferModal, 1200);
   });
-
