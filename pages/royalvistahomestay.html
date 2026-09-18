@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Vista Homestay — Calangute, Goa | Maahi Trips</title>
+<meta name="description" content="Royal Vista Homestay, Calangute, Goa — ₹1,300/night, 100m from beach. AC rooms, free WiFi, parking. Book via Maahi Trips.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Hind:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../src/style.css">
+<style>
+  .hd-wrap{max-width:1100px;margin:0 auto;padding:0 20px;}
+  .hd-hero{padding:110px 0 20px;}
+  .hd-back{display:inline-flex;align-items:center;gap:6px;color:#C9BFA0;text-decoration:none;font-family:'Hind',sans-serif;font-size:14px;margin-bottom:18px;}
+  .hd-back:hover{text-decoration:underline;}
+  .hd-title-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px;}
+  .hd-title{font-family:'Teko',sans-serif;font-weight:600;font-size:44px;letter-spacing:.5px;color:#fff;line-height:1;margin:0;}
+  .hd-stars{color:#C9BFA0;font-size:20px;letter-spacing:2px;margin-top:6px;}
+  .hd-loc{display:flex;align-items:center;gap:6px;color:#B9B3A0;font-family:'Hind',sans-serif;font-size:15px;margin-top:8px;}
+  .hd-loc svg{width:16px;height:16px;flex-shrink:0;}
+  .hd-price-box{text-align:right;font-family:'Hind',sans-serif;}
+  .hd-price-box .lbl{font-size:13px;color:#8f897a;text-transform:uppercase;letter-spacing:1px;}
+  .hd-price-box .amt{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#C9BFA0;}
+
+  .hd-gallery{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin-bottom:36px;}
+  .hd-gallery-main{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3;background:#111;}
+  .hd-gallery-main img{width:100%;height:100%;object-fit:cover;display:block;cursor:pointer;}
+  .hd-gallery-side{display:grid;grid-template-rows:repeat(2,1fr);gap:10px;}
+  .hd-gallery-side .hd-thumb{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3;background:#111;}
+  .hd-gallery-side .hd-thumb img{width:100%;height:100%;object-fit:cover;display:block;cursor:pointer;}
+  .hd-gallery-more{position:absolute;inset:0;background:rgba(0,0,0,.55);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Hind',sans-serif;font-weight:600;font-size:16px;cursor:pointer;}
+  .hd-strip{display:flex;gap:8px;overflow-x:auto;margin-bottom:40px;padding-bottom:4px;}
+  .hd-strip img{width:90px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;cursor:pointer;opacity:.65;transition:opacity .2s;border:1px solid transparent;}
+  .hd-strip img:hover,.hd-strip img.active{opacity:1;border-color:#C9BFA0;}
+
+  .hd-cols{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start;}
+  .hd-section-title{font-family:'Teko',sans-serif;font-weight:600;font-size:24px;letter-spacing:.5px;color:#fff;margin:0 0 14px;text-transform:uppercase;}
+  .hd-desc{font-family:'Hind',sans-serif;font-size:15.5px;line-height:1.75;color:#B9B3A0;margin-bottom:34px;}
+  .hd-amenities-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-bottom:34px;}
+  .hd-amenity{display:flex;align-items:center;gap:10px;font-family:'Hind',sans-serif;font-size:15px;color:#e9e5da;}
+  .hd-amenity svg{width:18px;height:18px;color:#C9BFA0;flex-shrink:0;}
+
+  .hd-book-card{background:#15140f;border:1px solid #2a271e;border-radius:14px;padding:26px;position:sticky;top:100px;}
+  .hd-book-card .price{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:32px;color:#C9BFA0;}
+  .hd-book-card .price span{font-family:'Hind',sans-serif;font-weight:500;font-size:14px;color:#8f897a;}
+  .hd-book-card .stars{color:#C9BFA0;margin:6px 0 18px;font-size:17px;}
+  .hd-book-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;border-radius:8px;font-family:'Hind',sans-serif;font-weight:600;font-size:15px;text-decoration:none;margin-bottom:12px;}
+  .hd-book-btn.call{background:#C9BFA0;color:#15140f;}
+  .hd-book-btn.wa{background:#25D366;color:#fff;}
+  .hd-book-note{font-family:'Hind',sans-serif;font-size:12.5px;color:#8f897a;text-align:center;margin-top:10px;line-height:1.5;}
+
+  @media (max-width:820px){
+    .hd-cols{grid-template-columns:1fr;}
+    .hd-gallery{grid-template-columns:1fr;}
+    .hd-gallery-side{display:none;}
+    .hd-title{font-size:34px;}
+    .hd-title-row{flex-direction:column;align-items:flex-start;}
+    .hd-price-box{text-align:left;}
+    .hd-amenities-grid{grid-template-columns:1fr;}
+    .hd-book-card{position:static;}
+  }
+</style>
+</head>
+<body id="top">
+
+<header>
+  <div class="nav">
+    <a class="logo" href="https://maahitrips.in/" aria-label="Maahi Trips — Home">
+      <div class="logo-mark"><img src="../assets/maahi-logo.png" alt="Maahi Trips logo"></div>
+      <div class="logo-text">
+        <span class="logo-word">MAAHI TRIPS</span>
+        <span class="logo-tagline">Safar Aapka, Saath Hamaara</span>
+      </div>
+    </a>
+    <nav class="navlinks">
+      <a href="#" id="offersNavLink">Offers</a>
+      <a href="../index.html#umrah">Umrah</a>
+      <a href="../index.html#services">Services</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="#why">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:9096481625">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="full">90964&nbsp;81625</span>
+    </a>
+    <button class="menu-toggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<section class="hd-hero">
+  <div class="hd-wrap">
+    <a class="hd-back" href="homestay-villa.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Homestays &amp; Villas
+    </a>
+
+    <div class="hd-title-row">
+      <div>
+        <h1 class="hd-title">Royal Vista Homestay</h1>
+        <div class="hd-stars">★</div>
+        <div class="hd-loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Calangute, Goa · 100m from beach
+        </div>
+      </div>
+      <div class="hd-price-box">
+        <div class="lbl">Per Night</div>
+        <div class="amt">₹1,300</div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="hd-gallery">
+      <div class="hd-gallery-main">
+        <img id="hdMainImg" src="https://i.ibb.co/8DwpBXsv/2a1ae41ae172bc7a77a76368fd6936a7.jpg" alt="Royal Vista Homestay" onclick="openLightbox(document.querySelector('.hd-gallery-main .hd-mock-slider')||this.parentElement)">
+      </div>
+      <div class="hd-gallery-side">
+        <div class="hd-thumb"><img src="https://i.ibb.co/DgWQ761z/3ad85311add508233b030574ca784cc8.jpg" alt="Royal Vista Homestay" onclick="hdSetMain('https://i.ibb.co/DgWQ761z/3ad85311add508233b030574ca784cc8.jpg')"></div>
+        <div class="hd-thumb">
+          <img src="https://i.ibb.co/Tzy8xxt/3d4746c21ab8fa7e0f62f4618fb95833.jpg" alt="Royal Vista Homestay" onclick="hdSetMain('https://i.ibb.co/Tzy8xxt/3d4746c21ab8fa7e0f62f4618fb95833.jpg')">
+          <div class="hd-gallery-more" onclick="document.getElementById('hdStrip').scrollIntoView({behavior:'smooth',block:'center'})">+24 more photos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hd-strip" id="hdStrip">
+      <img src="https://i.ibb.co/8DwpBXsv/2a1ae41ae172bc7a77a76368fd6936a7.jpg" class="active" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/DgWQ761z/3ad85311add508233b030574ca784cc8.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/Tzy8xxt/3d4746c21ab8fa7e0f62f4618fb95833.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/xK6t4FRR/4fb4cfd86194c1e24de8d62e334325c3.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/NnCdTNPY/8f1c17e81822726efdb893047afb4eee.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/Kj048r7z/8fb11c480db12e9cda7959dd80e826ba.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/hxf3fdnj/22ced83eb986bb5609021b6690b63a70.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/tM1fDh8M/027bdb6becb2fc8adde1972067498244.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/prNcGrzH/69c2bcb0c4bd2d903111a913c1bd291b.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/vvMQGMxG/327af4dc5343a633bc206d6b8e7096a7.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/9kyR4vzR/340dbfdac16d4b1622951d6b08ba6d05.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/chCW0vJB/24863de55a77499b2ddfafe63d17bbfa.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/9H29CJSx/56630f0cb305809ca3311cabb7e19b44.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/HTC348fC/96659bc0c8282f83486c81e3a4fa5385.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/8nW7sbz2/9491480a203a2a1df3f7412f5b25e566.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/HDG3RVqZ/9647959-19091021390080755498.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/W8Fbgxx/9647959-19091021400080755521.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/zVrNz6hk/9647959-19091022460080757129.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/W42t86w1/9647959-19091023160080758013.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/KpKsbXzm/b657208838bbc2e35d75c1cdf15b62a0.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/N2f7JMNY/c7ead2dbb2b75bfbf6133a17a1f5b7af.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/vvRzxCm7/c117953df88d61d04393d1d86a3b4b58.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/GQBLW61W/cd340f2b85f4bde57fa0bcf51dc02d49.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/PsFK4gfG/cffdfd3fe809e7fd28287ff206e98d7c.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/Gf0KxZc8/e11346a769566adf6ce412de11ba2e78.jpg" onclick="hdSetMain(this.src,this)">
+      <img src="https://i.ibb.co/B2wVvFRf/fadef5cd65c7f1efbb7507a08f64a522.jpg" onclick="hdSetMain(this.src,this)">
+    </div>
+
+    <!-- Content -->
+    <div class="hd-cols">
+      <div>
+        <h2 class="hd-section-title">About This Property</h2>
+        <p class="hd-desc">
+          Royal Vista Homestay is a budget-friendly stay in Calangute, Goa, just 100 metres from the beach. Rooms are simple and AC-equipped, and the property is an easy walk to the sand, beach shacks and local markets. Parking is available on site. Rooms checked and booked through Maahi Trips.
+        </p>
+
+        <h2 class="hd-section-title">Amenities</h2>
+        <div class="hd-amenities-grid">
+          <div class="hd-amenity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 12h12M8 12V8a4 4 0 0 1 8 0v4"/><rect x="4" y="12" width="16" height="8" rx="1"/></svg>AC Rooms</div>
+          <div class="hd-amenity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0M12 20h.01M2 9a15 15 0 0 1 20 0"/></svg>Free WiFi</div>
+          <div class="hd-amenity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M7 6V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2"/></svg>Parking</div>
+          <div class="hd-amenity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 20s2-2 5-2 5 2 5 2 2-2 5-2 5 2 5 2M4 15V6a2 2 0 0 1 2-2h6l2 3h6a2 2 0 0 1 2 2v6"/></svg>Beach Front</div>
+        </div>
+      </div>
+
+      <!-- Booking card -->
+      <div class="hd-book-card">
+        <div class="price">₹1,300 <span>/ night</span></div>
+        <div class="stars">★</div>
+        <a class="hd-book-btn call" href="tel:9096481625">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 90964 81625
+        </a>
+        <a class="hd-book-btn wa" href="https://wa.me/919096481625?text=Hi%2C%20I%20want%20to%20book%20Royal%20Vista%20Homestay%2C%20Calangute%2C%20Goa" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.01A8.94 8.94 0 0 0 20 12.5a8.87 8.87 0 0 0-2.4-6.18zm-5.55 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.97.94-2.72-.18-.28a7.42 7.42 0 0 1 11.6-9.16 7.36 7.36 0 0 1 2.18 5.24 7.43 7.43 0 0 1-7.69 7.14z"/></svg>
+          WhatsApp Enquiry
+        </a>
+        <div class="hd-book-note">Rooms checked &amp; booked through Maahi Trips, Kopaganj, Mau.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="logo-mini"><img src="../assets/maahi-logo.png" alt="Maahi Trips">MAAHI TRIPS</div>
+    <div>CHAMAN ROAD · KOPAGANJ · MAU, UP</div>
+    <div>90441 00521</div>
+    <div class="footer-tagline">"Aapka Bharosa, Hamari Zimmedari"</div>
+  </div>
+</footer>
+
+<a href="tel:9096481625" class="call-float" aria-label="Call Maahi Trips">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<a href="https://wa.me/919096481625?text=Hi%2C%20I%20want%20to%20enquire%20about%20Royal%20Vista%20Homestay"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+    <path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.13h.01A8.94 8.94 0 0 0 20 12.5a8.87 8.87 0 0 0-2.4-6.18zm-5.55 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.97.94-2.72-.18-.28a7.42 7.42 0 0 1 11.6-9.16 7.36 7.36 0 0 1 2.18 5.24 7.43 7.43 0 0 1-7.69 7.14zm4.07-5.56c-.22-.11-1.31-.65-1.52-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.17-.48.06-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.32-1.24-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.66-.18-.43-.37-.37-.5-.38-.13-.01-.28-.01-.43-.01s-.39.06-.6.28c-.2.22-.79.77-.79 1.87s.81 2.17.92 2.32c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.05-.1-.2-.16-.42-.27z"/>
+  </svg>
+</a>
+
+<!-- Gallery Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+  <img id="lightbox-img" src="" alt="Royal Vista Homestay photo">
+</div>
+
+<script>
+  function hdSetMain(src, thumbEl){
+    document.getElementById('hdMainImg').src = src;
+    document.querySelectorAll('.hd-strip img').forEach(function(el){el.classList.remove('active');});
+    if(thumbEl){ thumbEl.classList.add('active'); }
+    window.scrollTo({top: document.querySelector('.hd-hero').offsetTop, behavior:'smooth'});
+  }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="../src/script.js"></script>
+</body>
+</html>
